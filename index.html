@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alex Smith — UI / UX Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-['Inter'] text-gray-900 bg-white selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden">
+
+<!-- NAV -->
+<header id="top" class="sticky top-0 z-40 bg-white/70 backdrop-blur-md border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="#" class="text-lg font-semibold tracking-tight hover:text-indigo-600 transition-colors">Alex&nbsp;Smith</a>
+    <nav class="hidden md:flex gap-8 text-sm font-medium">
+      <a href="#work" class="group transition-colors">Work<span class="block h-px bg-indigo-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span></a>
+      <a href="#about" class="group transition-colors">About<span class="block h-px bg-indigo-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span></a>
+      <a href="#contact" class="group transition-colors">Contact<span class="block h-px bg-indigo-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span></a>
+    </nav>
+    <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <!-- mobile sheet -->
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-white/90 backdrop-blur-xl flex-col items-center justify-center gap-8 text-lg font-medium hidden">
+    <button id="closeMenu" class="absolute top-6 right-6 p-2 rounded hover:bg-gray-100">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <a href="#work" class="linkFade">Work</a>
+    <a href="#about" class="linkFade">About</a>
+    <a href="#contact" class="linkFade">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <!-- BG Blurs -->
+  <div class="absolute -top-32 -left-32 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-70 pointer-events-none"></div>
+  <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-pink-100 rounded-full filter blur-3xl opacity-70 pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-32 flex flex-col lg:flex-row items-center gap-14">
+    <div class="flex-1 flex flex-col items-start gap-6">
+      <h1 class="text-5xl lg:text-6xl font-semibold tracking-tight leading-tight opacity-0 translate-y-10 transition-all duration-700" data-animate>
+        Designing <span class="text-indigo-600">human-centric</span> digital experiences
+      </h1>
+      <p class="text-gray-600 leading-loose max-w-xl opacity-0 translate-y-10 transition-all duration-700 delay-100" data-animate>
+        I’m Alex, a UI/UX designer crafting delightful products for web and mobile. I translate complex problems into intuitive, accessible and engaging experiences.
+      </p>
+      <div class="flex gap-4 opacity-0 translate-y-10 transition-all duration-700 delay-200" data-animate>
+        <a href="#work" class="px-6 py-3 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 focus-visible:outline-indigo-600 transition-colors">Explore Work</a>
+        <a href="#contact" class="px-6 py-3 border border-gray-300 rounded hover:border-indigo-600 hover:text-indigo-600 transition-colors">Get in Touch</a>
+      </div>
+    </div>
+    <div class="flex-1 opacity-0 translate-y-10 transition-all duration-700 delay-300" data-animate>
+      <img src="https://images.unsplash.com/photo-1621619856624-42fd193a0661?w=1080&q=80" alt="Alex portrait" class="w-full max-w-md mx-auto rounded-xl shadow-lg">
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="max-w-7xl mx-auto px-6">
+  <div class="border-t border-gray-100"></div>
+</div>
+
+<!-- WORK -->
+<section id="work" class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-3xl font-semibold tracking-tight mb-12 opacity-0 translate-y-10 transition-all duration-700" data-animate>Selected Work</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Project Card -->
+    <article class="group relative rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow opacity-0 translate-y-10 duration-700" data-animate>
+      <img src="https://images.unsplash.com/photo-1642615835477-d303d7dc9ee9?w=1080&q=80" alt="Project screenshot" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-4 left-4">
+        <h3 class="text-white text-xl font-semibold tracking-tight">Fintech Dashboard</h3>
+        <p class="text-white/80 text-sm">Web • 2023</p>
+      </div>
+    </article>
+
+    <article class="group relative rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow opacity-0 translate-y-10 duration-700 delay-100" data-animate>
+      <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?auto=format&fit=crop&w=800&q=80" alt="Project screenshot" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-4 left-4">
+        <h3 class="text-white text-xl font-semibold tracking-tight">Health & Wellness App</h3>
+        <p class="text-white/80 text-sm">iOS • 2022</p>
+      </div>
+    </article>
+
+    <article class="group relative rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow opacity-0 translate-y-10 duration-700 delay-200" data-animate>
+      <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80" alt="Project screenshot" class="w-full h-64 object-cover transition-transform group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="absolute bottom-4 left-4">
+        <h3 class="text-white text-xl font-semibold tracking-tight">E-commerce Redesign</h3>
+        <p class="text-white/80 text-sm">Web • 2022</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="max-w-7xl mx-auto px-6">
+  <div class="border-t border-gray-100"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-7xl mx-auto px-6 py-24 flex flex-col lg:flex-row gap-14">
+  <div class="flex-1 flex flex-col gap-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>
+    <h2 class="text-3xl font-semibold tracking-tight">About Me</h2>
+    <p class="text-gray-600 leading-loose">
+      Over the last 6 years I’ve collaborated with startups and enterprises to create products that blend form and function. I chase clarity, push pixels, and obsess over micro-interactions.
+    </p>
+    <ul class="space-y-4">
+      <li class="flex items-center gap-3">
+        <i data-lucide="check-circle" class="text-indigo-600 w-5 h-5"></i>
+        <span>Human-centered design process</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <i data-lucide="check-circle" class="text-indigo-600 w-5 h-5"></i>
+        <span>Accessibility first</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <i data-lucide="check-circle" class="text-indigo-600 w-5 h-5"></i>
+        <span>Data-driven iterations</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="flex-1 flex flex-col items-center justify-center opacity-0 translate-y-10 transition-all duration-700 delay-100" data-animate>
+    <div class="w-full max-w-sm">
+      <h3 class="text-lg font-medium mb-4 text-center">Skill Radar</h3>
+      <div>
+        <canvas id="skillChart" width="400" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="max-w-7xl mx-auto px-6">
+  <div class="border-t border-gray-100"></div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-7xl mx-auto px-6 py-24">
+  <div class="mx-auto max-w-3xl text-center">
+    <h2 class="text-3xl font-semibold tracking-tight mb-6 opacity-0 translate-y-10 transition-all duration-700" data-animate>Let’s build something great</h2>
+    <p class="text-gray-600 mb-12 opacity-0 translate-y-10 transition-all duration-700 delay-100" data-animate>
+      Have an idea or project in mind? Reach out and let’s make it happen.
+    </p>
+  </div>
+  <form class="mx-auto max-w-xl grid gap-6 opacity-0 translate-y-10 transition-all duration-700 delay-200" data-animate>
+    <div class="grid md:grid-cols-2 gap-6">
+      <input type="text" placeholder="Name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100 outline-none transition"/>
+      <input type="email" placeholder="Email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100 outline-none transition"/>
+    </div>
+    <textarea rows="5" placeholder="Tell me about your project..." class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:border-indigo-600 focus:ring-2 focus:ring-indigo-100 outline-none transition"></textarea>
+    <button type="submit" class="justify-self-start px-8 py-3 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 focus-visible:outline-indigo-600 transition">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 border-t border-gray-100">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+    <p>&copy; <span id="year"></span> Alex Smith. All rights reserved.</p>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-indigo-600"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+      <a href="#" class="hover:text-indigo-600"><i data-lucide="dribbble" class="w-5 h-5"></i></a>
+      <a href="#" class="hover:text-indigo-600"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+  // lucide
+  lucide.createIcons();
+
+  // mobile nav
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  const toggleMenu = () => mobileMenu.classList.toggle('hidden');
+  menuBtn.addEventListener('click', toggleMenu);
+  closeMenu.addEventListener('click', toggleMenu);
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', toggleMenu));
+
+  // chart.js skill radar
+  const ctx = document.getElementById('skillChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['UI', 'UX', 'Research', 'Prototyping', 'Branding', 'Accessibility'],
+      datasets: [{
+        data: [90, 85, 70, 80, 75, 90],
+        fill: true,
+        backgroundColor: 'rgba(99,102,241,0.2)',
+        borderColor: 'rgb(99,102,241)',
+        pointBackgroundColor: 'rgb(99,102,241)',
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { r: { beginAtZero: true, max: 100, ticks: { stepSize: 25 } } }
+    }
+  });
+
+  // Intersection observer for fade/slide reveal
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.remove('opacity-0','translate-y-10');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.2});
+  document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
